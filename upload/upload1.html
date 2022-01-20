@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload test page</title>
+</head>
+<body>
+<!-- form 태그 = form 태그가 감싸고 있는 정보 : 어디로 data를 전송 할 것인가?
+    enctype : 인코딩 타입 multipart/form-data가 bible -->
+    <form method="POST" action="upload2.php" enctype="multipart/form-data" >
+        <!-- upload.php가 get/post 된 정보를 받는다. -->
+        <!-- 파일 용량 제한 자체는 html 문서 수정으로 얼마든지 바꿀 수 있음 : 보안의 의미가 없음 -->
+        <input type="hidden" name="MAX_FILE_SIZE" value="30000000000" />
+        <input type="file" name="userfile" />
+        <!--<input type="file" name="userfile2" />-->
+        <input type="submit" value="upload" />
+    </form>
+</body>
+</html>
