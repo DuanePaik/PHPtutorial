@@ -20,6 +20,7 @@ echo "자세한 디버깅 정보입니다.<br />";
 print_r($_FILES);
 print "</pre>"
 ?>
+<!--CSS 태그로 지정?-->
 <img src="<?=$_FILES['userfile']['name']?>" />
 </body>
 </html>
